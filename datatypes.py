@@ -33,8 +33,17 @@ print(123 + 345)
 # new_num_leng = str(num_leng)
 # print("Your name has " + new_num_leng + " characters.")
 
-# a = float(123)
+# a = float(123);l;w e/c/
 # print(type(a))
 
 # print(70 + float('100.5'))
-print(str(70) + str(100))
+# print(str(70) + str(100))
+
+two_digit_number = input()
+
+first_digit = int(two_digit_number[0])
+second_digit = int(two_digit_number[1])
+
+two_digit_number = first_digit + second_digit
+
+print(two_digit_number)
