@@ -23,3 +23,6 @@ print(123 + 345)
 
 # BOOLEAN
 # has two types, true of false.
+
+num_char = len(input("What is your name"))
+print("Your name has " + num_char + " character")
