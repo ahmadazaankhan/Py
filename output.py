@@ -21,7 +21,13 @@
 
 
 def name_format(g_name, r_name):
+    if g_name == "" or r_name == "":
+        return "You didn't provide valid inputs. "
+    # if g_name == "" or r_name == "":
+
     formated_g_name = g_name.title()
     formated_r_name = r_name.title()
-    return f"{formated_g_name} {formated_r_name}"
-print(name_format("AsHeeR", "haDDDI"))
+    return f"Result: {formated_g_name} {formated_r_name}"
+
+
+print(name_format(input("What is your name? "), input("What is your last name? ")))
