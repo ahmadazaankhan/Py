@@ -1,11 +1,4 @@
-############### Blackjack Project #####################
-
-#Difficulty Normal 😎: Use all Hints below to complete the project.
-#Difficulty Hard 🤔: Use only Hints 1, 2, 3 to complete the project.
-#Difficulty Extra Hard 😭: Only use Hints 1 & 2 to complete the project.
-#Difficulty Expert 🤯: Only use Hint 1 to complete the project.
-
-############### Our Blackjack House Rules #####################
+############### Blackjack House Rules #####################
 
 ## The deck is unlimited in size. 
 ## There are no jokers. 
@@ -50,22 +43,6 @@ def compare(user_score, computer_score):
     return "You win 😁"
   else:
     return "You lose 😭"
-
-def compare(user_score, computer_score):
-  if user_score == computer_score:
-    return "Draw"
-  elif computer_score == 0:
-    return "Lose, opponent has Blackjack"
-  elif user_score == 0:
-    return "You win with a Blackjack"
-  elif user_score > 21:
-    return "You went over. You lose"
-  elif computer_score > 21:
-    return "Win"
-  elif user_score > computer_score:
-    return "You win"
-  else: 
-    return "You lose"
 
 def play_game():
   
