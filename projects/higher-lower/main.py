@@ -2,6 +2,8 @@
 from art import logo, vs
 from game_data import data
 import random
+import os
+
 
 def format_data(account):
   account_name = account["name"]
@@ -23,10 +25,9 @@ score = 0
 game_should_continue = True
 account_b = random.choice(data)
 
-# Make the game repeatable.
+
 while game_should_continue:
 
-  # Generate a random account from the game data.
   account_a = account_b
   account_b = random.choice(data)
 
@@ -38,16 +39,14 @@ while game_should_continue:
   print(vs)
   print(f"Against B: {format_data(account_b)}.")
 
-  # Ask user for a guess.
+
   guess = input("Who has more followers? Type 'A' or 'B': ").lower()
 
   a_follower_count = account_a["follower_count"]
   b_follower_count = account_b["follower_count"]
   is_correct = check_answer(guess, a_follower_count, b_follower_count)
 
-  # Check if user is correct.
-  # Get follower count of each account.
-  # Use if statement to check if user is correct.
+  os.system('clear')
 
   if is_correct:
     score += 1
@@ -56,8 +55,4 @@ while game_should_continue:
     game_should_continue = False
     print(f"Sorry, that's wrong. Final score: {score}.")
 
-  # Give user feedback on their guess.
-  # Score keeping.
 
-  # Making account at position B become the next account at position A.
-  # Clear the screen between rounds.A
